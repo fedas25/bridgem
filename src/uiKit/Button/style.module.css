@@ -1,0 +1,17 @@
+.container {
+    padding: 14px 28px 16px;
+    background-color: var(--color-black);
+    color: var(--white-text);
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: var(--semibold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media (min-width: 640px) {
+        font-size: 20px;
+        padding: 18px 28px 20px;
+    }
+}

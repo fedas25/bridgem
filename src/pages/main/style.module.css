@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+    padding: var(--padding-mobile-container);
+    background-color: var(--color-violet);
+    color: var(--color-white);
+
+    @media (min-width: 640px) {
+        padding: var(--padding-tablet-container);
+    }
+
+    @media (min-width: 1360px) {
+        padding: var(--padding-desktop-container);
+    }
+}
