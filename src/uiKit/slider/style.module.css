@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+    color: black;
+}
+
+.content {
+    transition: transform .8s;
+    display: flex;
+    gap: 50px;
+}
+
+.nav {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+
+    div {
+        width: 20px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: var(--color-violet-light);
+    }
+
+    .active {
+        background-color: var(--color-violet);
+    }
+}

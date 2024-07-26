@@ -1,0 +1,195 @@
+.container {
+    width: 100%;
+    min-width: 100%;
+    padding: 20px 16px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+
+    @media (min-width: 960px) {
+        width: 600px;
+        min-width: 600px;
+        padding: 42px 33px;
+    }
+}
+
+.title {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: var(--semibold);
+
+    span {
+        display: none;
+    }
+
+    @media (min-width: 920px) {
+        font-size: 26px;
+        line-height: 110%;
+
+        span {
+            display: block;
+        }
+
+        .linkContainer {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 20px;
+            color: var(--color-text-gray);
+            font-weight: var(--semibold);
+
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+    }
+}
+
+.description {
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 125%;
+    font-weight: var(--medium);
+    color: var(--color-text-gray);
+
+    @media (min-width: 640px) {}
+}
+
+.points {
+    margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    justify-content: start;
+    justify-items: start;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 125%;
+    color: var(--color-text-gray);
+
+    @media (min-width: 640px) {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media (min-width: 640px) {
+        max-width: 260px;
+    }
+
+}
+
+.prices {
+    @media (min-width: 960px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.price_per_class {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title_price_classes {
+    margin-bottom: 12px;
+    color: var(--color-text-gray);
+    font-size: 18px;
+    font-weight: var(--semibold);
+    line-height: 110%;
+
+    @media (min-width: 960px) {
+        margin-bottom: 0;
+    }
+}
+
+.price {
+    display: flex;
+    gap: 12px;
+
+    font-size: 30px;
+    color: var(--color-violet);
+    line-height: 120%;
+
+    @media (min-width: 960px) {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .time {
+        display: flex;
+        gap: 8px;
+        font-size: 16px;
+        align-items: start;
+        color: var(--color-text-gray);
+        font-weight: var(--semibold);
+    }
+}
+
+.separator {
+    display: none;
+
+    @media (min-width: 960px) {
+        display: block;
+        height: 120px;
+        width: 3px;
+        background: #E4E4E7;
+        border-radius: 5px
+    }
+}
+
+.price_per_course {
+    margin-top: 24px;
+    margin-bottom: 12px;
+
+    @media (min-width: 960px) {
+        margin: 0;
+    }
+}
+
+.title_price_course {
+    color: var(--color-text-gray);
+    font-size: 18px;
+    font-weight: var(--semibold);
+    line-height: 110%;
+
+    @media (min-width: 960px) {
+        margin-bottom: 20px;
+    }
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-text-gray-lihght);
+
+    @media (min-width: 960px) {
+        margin-bottom: 0;
+    }
+
+    .banner {
+        padding: 6px 7px;
+        border-radius: 5px;
+        background-color: var(--color-red);
+        font-size: 17px;
+        font-weight: var(--semibold);
+        color: var(--color-white);
+    }
+}
