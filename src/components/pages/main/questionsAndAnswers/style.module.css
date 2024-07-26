@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    color: var(--white-text);
+
+    @media (min-width: 960px) {}
+}
+
+.title {
+    font-size: 24px;
+    font-weight: var(--semibold);
+    line-height: 110%;
+    color: var(--color-text-black);
+
+    @media (min-width: 960px) {}
+}

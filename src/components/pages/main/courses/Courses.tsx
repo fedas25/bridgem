@@ -8,7 +8,6 @@ import { useScreenType } from "src/hooks/common/useScreenType";
 export const Courses = () => {
   const [handlerLeft, setHandlerLeft] = useState<() => void>(() => () => { });
   const [handlerRight, setHandlerRight] = useState<() => void>(() => () => { });
-  const [activeCardNumber, setActiveCardNumber] = useState(0);
   const screenType = useScreenType();
 
   return (
@@ -29,7 +28,6 @@ export const Courses = () => {
       <Slider
         setHandlerLeft={setHandlerLeft}
         setHandlerRight={setHandlerRight}
-        setEksternalActiveCardNumber={setActiveCardNumber}
       />
     </div>
   );

@@ -7,20 +7,21 @@ import { useScreenType } from "src/hooks/common/useScreenType";
 type Props = {
     setHandlerLeft?: (handler: () => void) => void
     setHandlerRight?: (handler: () => void) => void
-    setEksternalActiveCardNumber?: (number: any) => void
 };
 
 const gapItems = 50
 
 const cards: number[] = [1, 2, 4]
 
-// TODO перенести в папку с общими компонентами
+// TODO сделать ограничение пролистывания у десктопа
 
 // TODO screenType везде вынести в App и передавать как контекст
 
-// TODO просто вынести компонент в курсыы
+// TODO попробовать вынести весь функционал для работы в хук кастомный или компонент
 
-export default ({ setHandlerLeft, setHandlerRight, setEksternalActiveCardNumber }: Props) => {
+// TODO перенести в папку с общими компонентами
+
+export default ({ setHandlerLeft, setHandlerRight }: Props) => {
     const ref = useRef(null);
     const refCArds = useRef(null);
 
