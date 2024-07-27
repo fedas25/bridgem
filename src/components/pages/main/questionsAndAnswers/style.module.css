@@ -1,15 +1,84 @@
-.container {
-    position: relative;
-    color: var(--white-text);
-
-    @media (min-width: 960px) {}
-}
-
 .title {
+    margin-bottom: 32px;
     font-size: 24px;
     font-weight: var(--semibold);
     line-height: 110%;
     color: var(--color-text-black);
 
-    @media (min-width: 960px) {}
+    @media (min-width: 640px) {
+        font-size: 38px;
+        margin-bottom: 42px;
+    }
+
+    @media (min-width: 960px) {
+        font-size: 48px;
+        margin-bottom: 52px;
+    }
+}
+
+.faq {
+    padding: 24px 0;
+    border-bottom: 2px solid var(--color-gray-border);
+
+    @media (min-width: 640px) {
+        padding: 40px 0;
+    }
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        margin-right: 24px;
+        font-size: 18px;
+        font-weight: var(--semibold);
+        line-height: 120%;
+        color: var(--color-text-black);
+
+        @media (min-width: 640px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 960px) {
+            line-height: 110%;
+        }
+    }
+
+    img {
+        transition: transform .6s;
+
+        @media (min-width: 640px) {
+            height: 72px;
+            width: 72px;
+        }
+    }
+}
+
+.answer {
+    margin-top: 22px;
+    font-size: 16px;
+    color: var(--color-text-gray);
+    line-height: 125%;
+
+    @media (min-width: 640px) {
+        width: 90%;
+        margin-top: 32px;
+        font-size: 20px;
+    }
+}
+
+.concealer {
+    overflow: hidden;
+    transition: max-height .6s;
+    max-height: 300px;
+}
+
+.hidden {
+    max-height: 0px;
+}
+
+.rotate {
+    transform: rotate(135deg);
 }
