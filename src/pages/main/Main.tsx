@@ -4,16 +4,16 @@ import style from "./style.module.css"
 export const Main = () => {
     return (
         <div className={style.container}>
-            {/* <Cover /> */}
-            {/* <Courses /> */}
+            <Cover />
+            <Courses />
             {/* <HowStartLearning /> */}
-            <FindYourLevel />
+            {/* <FindYourLevel /> */}
 
             {/* <makeUsSpecial /> */}
             {/* <Advantages /> */}
             {/* <Teachers /> */}
 
-            <QuestionsAndAnswers />
+            {/* <QuestionsAndAnswers /> */}
         </div>
     )
 }

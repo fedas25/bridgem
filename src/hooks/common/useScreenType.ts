@@ -21,5 +21,5 @@ export const useScreenType = () => {
 
     if (widthScreen > 960) return "desktop"
 
-    return "mobile" // default value
+    return "mobile" // default
 }
