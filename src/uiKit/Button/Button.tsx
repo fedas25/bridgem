@@ -13,7 +13,7 @@ export const Button = ({ children, classes = [], fullWidth = false }: Props) => 
         <button
             className={cn(...classes, style.container)}
             style={{
-                width: fullWidth ? "100%" : "auto",
+                width: fullWidth ? "100%" : "",
             }}
         >
             {children}

@@ -23,14 +23,20 @@ const useSliderController = () => {
     const screenType = useScreenType()
 
     useEffect(() => {
-        const offsetWidth = ref.current != null ? ref.current['offsetWidth'] : 0;
-        setWidthItem(offsetWidth);
-    }, [ref.current]);
+        const resizeHandler = () => {
+            const widthCards = refCArds.current != null ? refCArds.current["clientWidth"] : 0;
+            setWidthCards(widthCards);
 
-    useEffect(() => {
-        const widthCards = refCArds.current != null ? refCArds.current['offsetWidth'] : 0;
-        setWidthCards(widthCards);
-    }, []);
+            const offsetWidth = ref.current != null ? ref.current["clientWidth"] : 0;
+            setWidthItem(offsetWidth);
+        }
+
+        resizeHandler() // для получения изначальных размеров
+
+        window.addEventListener("resize", resizeHandler)
+
+        return () => window.removeEventListener("resize", resizeHandler)
+    })
 
     useEffect(() => {
         const maxOffset = widthCards - widthItem

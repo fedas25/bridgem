@@ -4,9 +4,9 @@ import style from "./style.module.css"
 export const Main = () => {
     return (
         <div className={style.container}>
-            <Cover />
+            {/* <Cover /> */}
             <Courses />
-            {/* <HowStartLearning /> */}
+            <HowStartLearning />
             {/* <FindYourLevel /> */}
 
             {/* <makeUsSpecial /> */}

@@ -1,7 +1,7 @@
 .container {
     padding: 14px 28px 16px;
     background-color: var(--color-black);
-    color: var(--white-text);
+    color: white;
     font-size: 17px;
     border-radius: 6px;
     font-weight: var(--semibold);
@@ -12,5 +12,6 @@
 
     @media (min-width: 640px) {
         font-size: 20px;
+        border-radius: 12px;
     }
 }
