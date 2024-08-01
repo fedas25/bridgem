@@ -21,6 +21,8 @@
     /* TODO поправить отсиуп у ветки */
     right: -142px;
     /* right: -192px; */
+    pointer-events: none;
+    user-select: none;
 
     @media (min-width: 640px) {
         width: 517px;

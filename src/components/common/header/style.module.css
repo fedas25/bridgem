@@ -11,6 +11,7 @@ img {
     align-items: center;
     grid-template-columns: 1fr auto auto;
     grid-template-rows: min-content;
+    border-bottom: 2px solid var(--color-gray-border);
 
     @media (min-width: 640px) {
         padding: 16px 32px;
