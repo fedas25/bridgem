@@ -51,12 +51,12 @@ const useSliderController = () => {
         setOffset(-newOffset)
     }, [activeCardNumber, widthItem]);
 
-    const handleTouchStart = (e: React.SyntheticEvent): void => {
+    const handleTouchStart = (e: React.TouchEvent): void => {
         const clientX = Math.floor(e.changedTouches[0].clientX);
         setStartX(clientX);
     };
 
-    const handleTouchMove = (e: React.SyntheticEvent): void => {
+    const handleTouchMove = (e: React.TouchEvent): void => {
         if (startX === 0) return;
 
         const xDiff = e.changedTouches[0].clientX - startX;
@@ -123,7 +123,7 @@ const View = forwardRef<HTMLDivElement, ViewProps>(({
             </div>
             {screenType !== "desktop" ? (
                 <div className={style.nav}>
-                    {Array(numberChildren).fill(0).map((value, index) => (
+                    {Array(numberChildren).fill(0).map((_, index) => (
                         <div key={index} className={cn({ [style.active]: activeCardNumber === index })}></div>
                     ))}
                 </div>

@@ -1,7 +1,6 @@
 import style from "./style.module.css";
 import { Slider } from "src/uiKit/slider";
 import cn from "classnames";
-import { useScreenType } from "src/hooks/common/useScreenType";
 import feature1 from "src/assets/Images/feature1.svg"
 import feature2 from "src/assets/Images/feature2.svg"
 import feature3 from "src/assets/Images/feature3.svg"
