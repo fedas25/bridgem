@@ -1,19 +1,17 @@
-import { Teachers, Courses, Cover, FindYourLevel, HowStartLearning, QuestionsAndAnswers } from "src/components/pages/main"
+import { Teachers, Courses, Cover, FindYourLevel, Advantages, MakeUsSpecial, HowStartLearning, QuestionsAndAnswers } from "src/components/pages/main"
 import style from "./style.module.css"
 
 export const Main = () => {
     return (
         <div className={style.container}>
-            {/* <Cover /> */}
-            {/* <Courses /> */}
-
+            <Cover />
+            <Courses />
             <HowStartLearning />
+            <FindYourLevel />
+            <MakeUsSpecial />
+            <Advantages />
             <Teachers />
-
-            {/* <FindYourLevel /> */}
-            {/* <makeUsSpecial /> */}
-            {/* <Advantages /> */}
-            {/* <QuestionsAndAnswers /> */}
+            <QuestionsAndAnswers />
         </div>
     )
 }

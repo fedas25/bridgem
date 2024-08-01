@@ -48,7 +48,7 @@
         grid-template-areas:
             "img nav"
             "img content";
-        justify-content: space-between;
+        justify-content: start;
         column-gap: 112px;
     }
 }
@@ -100,6 +100,7 @@
     }
 
     @media (min-width: 960px) {
+        max-width: 76%;
         margin-bottom: 48px;
     }
 }

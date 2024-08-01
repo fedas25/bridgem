@@ -124,6 +124,7 @@
     font-size: 30px;
     color: var(--color-violet);
     line-height: 120%;
+    font-weight: var(--bold-bold);
 
     @media (min-width: 960px) {
         font-weight: 700;
@@ -162,8 +163,9 @@
 }
 
 .title_price_course {
-    color: var(--color-text-gray);
+    margin-bottom: 12px;
     font-size: 18px;
+    color: var(--color-text-gray);
     font-weight: var(--semibold);
     line-height: 110%;
 

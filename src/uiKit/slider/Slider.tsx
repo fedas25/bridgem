@@ -95,7 +95,8 @@ type ViewProps = {
     offset: number,
     activeCardNumber: number,
     children: React.ReactNode,
-    setNumberCards: React.Dispatch<React.SetStateAction<number>>
+    setNumberCards: React.Dispatch<React.SetStateAction<number>>,
+    classes?: string[]
 };
 
 const View = forwardRef<HTMLDivElement, ViewProps>(({
@@ -105,7 +106,8 @@ const View = forwardRef<HTMLDivElement, ViewProps>(({
     handleTouchMove,
     offset,
     activeCardNumber,
-    setNumberCards
+    setNumberCards,
+    classes = []
 }, ref) => {
     const screenType = useScreenType();
     const numberChildren = React.Children.count(children)
@@ -115,7 +117,7 @@ const View = forwardRef<HTMLDivElement, ViewProps>(({
     }, [])
 
     return (
-        <div onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} ref={ref} className={style.container}>
+        <div onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} ref={ref} className={cn([...classes], style.container)}>
             <div ref={refCArds} style={{ transform: `translateX(${offset}px)` }} className={style.content}>
                 {children}
             </div>

@@ -3,6 +3,10 @@ import arrowLink from "src/assets/Icons/arrow-link.svg"
 import jackdaw from "src/assets/Icons/jackdaw.svg"
 import watch from "src/assets/Icons/watch.svg"
 
+// TODO перенести это в часть компонента курса
+
+// TODO вынести тайтл в общий компонент
+
 export const CardCourse = () => {
     return (
         <div className={style.container}>

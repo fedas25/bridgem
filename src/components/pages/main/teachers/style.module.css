@@ -26,7 +26,6 @@
     }
 
     @media (min-width: 960px) {
-        max-width: 740px;
         font-size: 48px;
     }
 }
@@ -55,12 +54,13 @@
 
 .img {
     margin-bottom: 48px;
-    /* height: 300px; */
-    /* object-fit: contain; */
+    object-fit: cover;
+    border-radius: 8px;
 
     @media (min-width: 640px) {
+        height: 600px;
         margin-bottom: 42px;
-        /* height: 482px; */
+        border-radius: 12px;
     }
 
     @media (min-width: 960px) {

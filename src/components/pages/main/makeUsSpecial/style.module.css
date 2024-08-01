@@ -1,0 +1,142 @@
+.container {
+    position: relative;
+    color: var(--white-text);
+
+    @media (min-width: 960px) {
+        padding: 72px 0;
+    }
+}
+
+.title {
+    font-size: 24px;
+    font-weight: var(--semibold);
+    line-height: 110%;
+    color: var(--color-text-black);
+
+    @media (min-width: 960px) {
+        font-size: 38px;
+    }
+
+    @media (min-width: 960px) {
+        max-width: 740px;
+        font-size: 48px;
+    }
+}
+
+.description {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    padding: 24px 0;
+    border-top: 2px solid var(--color-gray-border);
+    border-bottom: 2px solid var(--color-gray-border);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 32px;
+
+    @media (min-width: 640px) {
+        row-gap: 90px;
+        margin-top: 42px;
+        padding: 48px 0;
+        column-gap: 24px;
+    }
+
+    @media (min-width: 960px) {
+        row-gap: 30px;
+    }
+
+    span {
+        font-size: 18px;
+        color: var(--color-text-gray);
+        font-weight: var(--semibold);
+
+        @media (min-width: 640px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 960px) {
+            height: auto;
+        }
+    }
+
+    span:nth-child(1) {
+        max-width: 326px;
+
+        @media (min-width: 640px) {
+            max-width: 358px;
+        }
+    }
+
+    span:nth-child(2) {
+        margin-left: auto;
+
+        @media (min-width: 640px) {
+            margin-left: 0;
+        }
+    }
+
+}
+
+.slider {
+    @media (min-width: 640px) {
+        display: none;
+    }
+}
+
+.listCards {
+    display: none;
+
+    @media (min-width: 640px) {
+        display: block;
+    }
+
+    @media (min-width: 960px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 42px;
+        row-gap: 32px;
+    }
+}
+
+.card {
+    width: 100%;
+    min-width: 100%;
+    font-size: 18px;
+
+    @media (min-width: 640px) {
+        width: auto;
+        min-width: auto;
+        margin-bottom: 48px;
+    }
+
+    @media (min-width: 960px) {
+        width: 100%;
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+
+    img {
+        margin-left: calc(50% - 32px);
+        margin-bottom: 24px;
+    }
+
+    .name {
+        margin-bottom: 16px;
+        color: var(--color-text-black);
+
+        @media (min-width: 640px) {
+            font-size: 26px;
+        }
+    }
+
+    .text {
+        color: var(--color-text-gray);
+
+        @media (min-width: 640px) {
+            font-size: 18px;
+        }
+    }
+}
