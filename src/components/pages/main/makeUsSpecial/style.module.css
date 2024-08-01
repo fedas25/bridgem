@@ -1,6 +1,7 @@
 .container {
     position: relative;
     color: var(--white-text);
+    padding-top: 56px;
 
     @media (min-width: 960px) {
         padding: 72px 0;
