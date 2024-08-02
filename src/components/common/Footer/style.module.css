@@ -32,7 +32,7 @@
     grid-area: socialNetwork;
     width: 100%;
     padding: 25px 15px;
-    border-top: 2px solid var(--color-light-white);
+    border-top: 2px solid var(--color-violet-border);
     display: flex;
     justify-content: end;
     gap: 8px;
@@ -62,7 +62,7 @@
     grid-area: inn;
     width: 100%;
     padding: 24px 16px;
-    border-right: 2px solid var(--color-light-white);
+    border-right: 2px solid var(--color-violet-border);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,10 +105,9 @@
     grid-area: words;
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid var(--color-light-white);
+    border-bottom: 2px solid var(--color-violet-border);
 
     img {
         width: calc(100% - 64px);
-        /* height: 300px; */
     }
 }

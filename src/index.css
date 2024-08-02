@@ -3,7 +3,8 @@
   --color-black: #000000;
   --color-text-gray: #878787;
   --color-text-gray-lihght: #BCBCC5;
-  --color-gray-border: #B5B9E1;
+  --color-gray-border: #E4E4E7;
+  --color-violet-border: #ffffff3b;
   --color-violet: #6B73C2;
   --color-violet-light: rgba(108, 114, 177, 0.2);
   --color-violet-light-fill: #6C72B1;
@@ -24,6 +25,8 @@
   --semibold: 600;
   --bold: 700: --width-desktop: 1200px;
   --width-tablet: 640px;
+
+  --bold-bold: 700;
 
   --padding-mobile-container: 0 16px;
   --padding-tablet-container: 0 32px;

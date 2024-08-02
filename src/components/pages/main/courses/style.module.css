@@ -18,7 +18,7 @@
     color: var(--color-text-black);
 
     @media (min-width: 960px) {
-        max-width: 740px;
+        max-width: 800px;
         font-size: 48px;
     }
 }

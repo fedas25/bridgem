@@ -123,11 +123,10 @@
 
     font-size: 30px;
     color: var(--color-violet);
-    line-height: 120%;
     font-weight: var(--bold-bold);
+    line-height: 120%;
 
     @media (min-width: 960px) {
-        font-weight: 700;
         font-size: 40px;
     }
 
