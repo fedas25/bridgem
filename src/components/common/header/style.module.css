@@ -17,7 +17,7 @@ img {
         padding: 16px 32px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         padding: 16px 42px;
         grid-template-columns: 1fr auto auto auto auto;
         column-gap: 48px;
@@ -37,7 +37,7 @@ img {
     justify-items: end;
     margin-right: 18px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: none;
     }
 }
@@ -45,7 +45,7 @@ img {
 .account {
     display: none;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: flex;
         align-items: center;
         gap: 12px;
@@ -58,7 +58,7 @@ img {
     height: 22px;
     justify-items: end;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: none;
     }
 }
@@ -66,7 +66,7 @@ img {
 .contacts {
     display: none;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: block;
     }
 
@@ -75,7 +75,7 @@ img {
 .about {
     display: none;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: block;
     }
 
@@ -84,10 +84,19 @@ img {
 .courses {
     display: none;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: flex;
         align-items: center;
         gap: 12px;
+        cursor: pointer;
     }
 
+    img {
+        user-select: none;
+        transition: transform .4s;
+    }
+}
+
+.arrowRotate {
+    transform: rotateZ(180deg);
 }
