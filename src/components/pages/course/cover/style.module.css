@@ -1,0 +1,68 @@
+.container {
+    width: 100%;
+    position: relative;
+    padding-top: 56px;
+    background-color: white;
+}
+
+.content {
+    @media (min-width: 960px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.letters {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 42px;
+
+    @media (min-width: 960px) {
+        width: 402px;
+        height: 184px;
+        margin: 0;
+    }
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: var(--semibold);
+    color: var(--color-text-black);
+
+    @media (min-width: 640px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 960px) {
+        font-size: 48px;
+    }
+}
+
+.text {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 125%;
+    color: var(--color-text-gray);
+
+    @media (min-width: 640px) {
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 960px) {
+        font-size: 20px;
+        max-width: 890px;
+    }
+}
+
+.books {
+    position: relative;
+    top: 4px;
+
+    @media (min-width: 960px) {
+        width: 76px;
+        height: 68px;
+    }
+}
