@@ -7,7 +7,7 @@ function App() {
     <PageLayout>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/course" element={<Course />} />
+        <Route path="/bridgem/course" element={<Course />} />
         <Route path="*" element={<Main />} />
       </Routes>
     </PageLayout>

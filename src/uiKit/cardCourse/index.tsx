@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import style from "./style.module.css"
 import arrowLink from "src/assets/Icons/arrow-link.svg"
 import jackdaw from "src/assets/Icons/jackdaw.svg"
@@ -12,12 +13,12 @@ export const CardCourse = () => {
         <div className={style.container}>
             <div className={style.title}>
                 <span>A1 (Beginner Level)</span>
-                <div className={style.linkContainer}>
+                <Link to="bridgem/course" className={style.linkContainer}>
                     <img src={arrowLink} />
                     <span>
                         Подробнее
                     </span>
-                </div>
+                </Link>
             </div>
             <div className={style.description}>
                 Онлайн-курс предназначены для абсолютных начинающих.
