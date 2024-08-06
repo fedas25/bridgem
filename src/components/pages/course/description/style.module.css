@@ -1,0 +1,210 @@
+.container {
+    width: 100%;
+    position: relative;
+    padding-top: 56px;
+
+    @media (max-width: 640px) {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    @media (min-width: 640px) {
+        padding-top: 72px;
+    }
+
+    @media (min-width: 960px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
+.title {
+    margin-bottom: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 24px;
+    color: var(--color-text-black);
+    font-weight: var(--semibold);
+
+    @media (min-width: 640px) {
+        margin-bottom: 42px;
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 32px;
+    }
+
+    @media (min-width: 960px) {
+        max-width: 541px;
+        color: var(--color-text-gray-lihght);
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 780px;
+    }
+
+}
+
+
+
+.card {
+    background-color: var(--color-white);
+    width: 100%;
+    padding: 42px 16px;
+
+    @media (min-width: 640px) {
+        padding: 64px 28px;
+    }
+
+    @media (min-width: 960px) {
+        width: 560px;
+    }
+}
+
+.titleCard {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: var(--color-black);
+        max-width: 250px;
+        font-size: 18px;
+        font-weight: var(--semibold);
+        line-height: 100%;
+
+        @media (min-width: 640px) {
+            max-width: 460px;
+            font-size: 26px;
+        }
+    }
+
+    @media (min-width: 640px) {
+        margin-bottom: 48px;
+
+        img {
+            height: 72px;
+            width: 72px;
+        }
+    }
+}
+
+.property {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-text-gray);
+    font-size: 18px;
+
+}
+
+.prices {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 640px) {
+        margin-top: 48px;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    @media (min-width: 960px) {
+        justify-content: space-between;
+    }
+}
+
+.priceContainerHour {
+    @media (min-width: 640px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.titlePrice {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: var(--color-text-gray);
+
+    @media (min-width: 640px) {
+        font-size: 18px;
+    }
+}
+
+.price {
+    display: flex;
+    gap: 12px;
+    font-size: 40px;
+    color: var(--color-violet);
+    font-weight: var(--bold-bold);
+
+    @media (min-width: 640px) {
+        font-size: 30px;
+        font-weight: var(--semibold);
+    }
+}
+
+.duration {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    font-size: 16px;
+    color: var(--color-text-gray);
+    font-weight: var(--semibold);
+}
+
+.discount {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    span {
+        font-size: 20px;
+        color: var(--color-text-gray-lihght);
+        text-decoration: line-through;
+
+        @media (min-width: 640px) {
+            font-size: 18px;
+        }
+    }
+
+    div {
+        padding: 5px 6px 7px;
+        border-radius: 5px;
+        background-color: var(--color-red);
+        font-size: 16px;
+        color: var(--white);
+        font-weight: var(--semibold);
+
+        @media (min-width: 640px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.btn {
+    margin-top: 32px;
+
+    @media (min-width: 640px) {
+        margin-top: 64px;
+        padding: 16px 28px 18px !important;
+    }
+}
+
+.separator {
+    display: none;
+    height: 136px;
+    width: 2px;
+    background-color: var(--color-gray-border);
+    border-radius: 5px;
+
+    @media (min-width: 960px) {
+        display: block;
+    }
+}
