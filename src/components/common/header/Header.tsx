@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 import style from "./style.module.css"
 import logo from "src/assets/Icons/logo.svg"
 import account from "src/assets/Icons/account.svg"
@@ -17,8 +18,9 @@ export const Header = ({ isShowMenu, setIsShowMenu }: Props) => {
 
   return (
     <div className={style.container}>
-      <img src={logo} className={style.logo} />
-
+      <Link to="/bridgem">
+        <img src={logo} className={style.logo} />
+      </Link>
       <div className={classNames("font-h5", style.about)}>
         О нас
       </div>

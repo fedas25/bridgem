@@ -41,12 +41,10 @@
     }
 
     @media (min-width: 1400px) {
-        max-width: 780px;
+        max-width: 810px;
+        font-size: 48px;
     }
-
 }
-
-
 
 .card {
     background-color: var(--color-white);
@@ -58,7 +56,7 @@
     }
 
     @media (min-width: 960px) {
-        width: 560px;
+        width: 600px;
     }
 }
 

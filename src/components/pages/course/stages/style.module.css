@@ -1,0 +1,138 @@
+.container {
+    margin-top: 56px;
+
+    @media (max-width: 640px) {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    @media (min-width: 960px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.title {
+    margin-bottom: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: var(--semibold);
+    line-height: 110%;
+    color: var(--color-text-black);
+
+    @media (min-width: 640px) {
+        font-size: 38px;
+        margin-bottom: 42px;
+    }
+
+    @media (min-width: 960px) {
+        margin-bottom: 52px;
+        font-size: 30px;
+        color: var(--color-text-gray-lihght);
+    }
+
+    @media (min-width: 1400px) {
+        font-size: 48px;
+    }
+}
+
+.containerStages {
+    padding: 42px 0;
+    background-color: var(--color-white);
+
+    @media (max-width: 640px) {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    @media (min-width: 640px) {
+        border-radius: 16px;
+        padding: 64px 0;
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+    @media (min-width: 960px) {
+        max-width: 600px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 800px;
+    }
+}
+
+.faq {
+    padding: 24px 0;
+    border-bottom: 2px solid var(--color-gray-border);
+
+    @media (min-width: 640px) {
+        padding: 40px 0;
+    }
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    div {
+        margin-right: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        font-size: 18px;
+        font-weight: var(--semibold);
+        line-height: 120%;
+        color: var(--color-text-black);
+
+        @media (min-width: 640px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 960px) {
+            line-height: 110%;
+        }
+
+        span {
+            color: var(--color-text-gray-lihght);
+        }
+    }
+
+    img {
+        transition: transform .6s;
+
+        @media (min-width: 640px) {
+            height: 72px;
+            width: 72px;
+        }
+    }
+}
+
+.answer {
+    margin-top: 22px;
+    font-size: 16px;
+    color: var(--color-text-gray);
+    line-height: 125%;
+
+    @media (min-width: 640px) {
+        margin-top: 32px;
+        font-size: 20px;
+    }
+}
+
+.concealer {
+    overflow: hidden;
+    transition: max-height .6s;
+    max-height: 300px;
+}
+
+.hidden {
+    max-height: 0px;
+}
+
+.rotate {
+    transform: rotate(135deg);
+}

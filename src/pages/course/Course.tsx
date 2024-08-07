@@ -1,4 +1,4 @@
-import { Cover, Description } from "src/components/pages/course"
+import { Cover, Description, Stages, Teachers } from "src/components/pages/course"
 import style from "./style.module.css"
 
 export const Course = () => {
@@ -6,6 +6,8 @@ export const Course = () => {
         <div className={style.container}>
             <Cover />
             <Description />
+            <Stages />
+            <Teachers />
         </div>
     )
 }

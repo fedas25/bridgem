@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import style from "./style.module.css"
 import cn from "classnames";
 
@@ -7,7 +9,6 @@ import arrow from "src/assets/Icons/arrow-down.svg"
 import whatsApp from "src/assets/Icons/WhatsApp.svg"
 import vk from "src/assets/Icons/vk.svg"
 import telegram from "src/assets/Icons/telegram.svg"
-import React, { useState } from "react";
 
 type PropsMobile = {
   show: boolean
@@ -39,7 +40,9 @@ const MenuMobile = ({ show, handlerClose }: PropsMobile) => {
             <img src={arrow} className={cn({ [style.arrowRotate]: isShowListCourses })} />
           </div>
           <div className={cn(style.listCourses, { [style.hidden]: isShowListCourses })}>
-            <p>A1 (Beginner Level)</p>
+            <Link to="bridgem/course" style={{ color: "white" }}>
+              <p>A1 (Beginner Level)</p>
+            </Link>
             <p>A2 (Elementary Level)</p>
             <p>B1 (Intermediate Level)</p>
             <p>B2 (Upper-Intermediate Level)</p>
@@ -68,16 +71,20 @@ const MenuMobile = ({ show, handlerClose }: PropsMobile) => {
   )
 }
 
+// TODO сделать убирание меню при переходе на другую страницу
+
 const MenuDesktop = ({ show = true }: { show: boolean }) => {
   return (
-    <div className={cn(style.containerDesktop, { [style.showContainerDesktop]: show })}>
-      <p>A1 (Beginner Level)</p>
-      <p>A2 (Elementary Level)</p>
-      <p>B1 (Intermediate Level)</p>
-      <p>B2 (Upper-Intermediate Level)</p>
-      <p>ЕГЭ</p>
-      <p>ОГЭ</p>
-    </div>
+    <Link to="bridgem/course">
+      <div className={cn(style.containerDesktop, { [style.showContainerDesktop]: show })}>
+        <p>A1 (Beginner Level)</p>
+        <p>A2 (Elementary Level)</p>
+        <p>B1 (Intermediate Level)</p>
+        <p>B2 (Upper-Intermediate Level)</p>
+        <p>ЕГЭ</p>
+        <p>ОГЭ</p>
+      </div>
+    </Link>
   )
 }
 
@@ -88,6 +95,12 @@ type Props = {
 
 export const Menu = ({ show = false, setShow }: Props) => {
   const handlerClose = () => setShow(false)
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setShow(false)
+  }, [location]);
 
   return (
     <>
